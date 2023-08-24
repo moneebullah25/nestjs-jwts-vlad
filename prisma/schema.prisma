@@ -16,7 +16,7 @@ model User {
   updatedAt DateTime @updatedAt
 
   email    String  @unique
-  hash     String
+  hash     String // Password
   hashedRt String?
 
   @@map("users") // custom name to the User Table which is now users
